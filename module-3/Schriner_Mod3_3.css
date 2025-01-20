@@ -1,0 +1,65 @@
+/* Centering the h1 */
+h1 {
+    text-align: center;
+}
+
+/* Styling for left and right divs */
+.left_div, .right_div {
+    display: inline-block;  
+    width: 43%; 
+    margin-right: 5%;  
+    vertical-align: top;  
+}
+.left_div {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.right_div {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+} 
+
+ol {
+    list-style-position: inside;
+    list-style-type: decimal;  
+    padding-left: 20px;  
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: upper-roman;
+    padding-left: 20px;
+}
+
+/* Styling for the last div */
+.last_div {
+    width: 100%;  
+    clear: both;  
+    margin-bottom: 20px;  
+    text-align: center;  
+    vertical-align: bottom;
+}
+
+/* Heading style inside divs */
+h3 {
+    font-weight: 500;
+}
+
+/* List item weight */
+li {
+    font-weight: 300;
+}
+
+/* Link styling */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
