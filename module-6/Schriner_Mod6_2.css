@@ -1,0 +1,74 @@
+h1 {font-family: 'Times New Roman', Times, serif; 
+  color: white;
+  font-weight: 400;   
+  background-color: #5d6d7e;
+  text-align: center;
+  padding: 20px;
+}
+
+#navbar{
+ overflow: hidden;
+ border: 15px solid;
+ background-color: #5d6d7e;
+ margin: 0;
+ padding: 0;
+}
+
+#navbar a {
+  float: left;                
+  display: block;     
+  color: white;
+  background-color: #5d6d7e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#navbar a:hover{
+  background-color: #4d5d6a;
+  color: #f1f1f1;
+}
+
+#container {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.card a: hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  font-weight: 400;
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
+footer a{
+ background-color: #5d6d7e;
+ position: absolute;
+ bottom: 0;
+ width: 98%;
+ text-decoration: none;
+ padding: 20px;
+ text-align: right;
+ font-sytle: italic;
+ font-weight: 400;
+ color: white; 
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
