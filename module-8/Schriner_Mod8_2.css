@@ -1,0 +1,107 @@
+h1 {font-family: 'Times New Roman', Times, serif; 
+  color: white;
+  font-weight: 400;   
+  background-color: #5d6d7e;
+  text-align: center;
+  padding: 20px;
+}
+
+#navbar{
+ overflow: hidden;
+ border: 15px solid;
+ background-color: #5d6d7e;
+}
+
+#navbar a {
+  float: left;                
+  display: block;     
+  color: white;
+  background-color: #5d6d7e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#navbar a:hover{
+  background-color: #4d5d6a;
+  color: #f1f1f1;
+}
+
+#container {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.card a: hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  font-weight: 400;
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
+footer {
+ background-color: #5d6d7e;
+ position: fixed;
+ bottom: 0;
+ left:0;
+ width: 100%;
+ text-decoration: none;
+ padding: 10px;
+}
+
+.landingPage{
+ text-align: right;
+ font-sytle: italic;
+ font-weight: 400;
+ color: white; 
+}
+
+.Copyright{
+ text-align: left;
+ font-sytle: italic;
+ font-weight: 400;
+ color: white; 
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin: 2% 5% 100px 5%;
+}
+
+.movies {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+
+
+
