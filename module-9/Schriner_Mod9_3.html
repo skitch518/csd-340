@@ -1,0 +1,71 @@
+<!-- Jason Schriner -->
+<!-- Module 9.3 -->
+<!-- 2/16/2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+   
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="Schriner_mod.9.css">
+
+    <!-- Meta tags -->
+    <meta name="author" content="Jason Schriner">
+    <meta name="description" content="This webpage is created for an assignment in my HTML class at Bellevue University.">
+    <meta http-equiv="refresh" content="30">  <!-- This will refresh the page every 30 seconds, remove if not needed -->
+    <meta name="robots" content="noindex, follow">  <!-- Search engines will not index the page but will follow links -->
+
+   <script>
+       var firstVariable = "crosses, ";
+       var secondVariable = "Dead. ";
+       var thirdVariable = "quarrel ";
+       var fourthVariable = "torch";
+   </script>
+
+</head>
+<body>
+   <div id="container">
+   
+   <h1> Assignment 9.3 – JavaScript -Part 1</h1>
+   <h2> In Flanders Fields </h2>
+   <h3> by John McCrae </h3>
+  
+   <p>In Flanders fields the poppies blow Between the <span id="crosses"> ______, </span> row on row, That mark our place;    
+      and in the sky The larks, still bravely singing, fly Scarce heard amid the guns below.</p>
+
+   <p>
+      <button type="button" onclick="document.getElementById('crosses').innerHTML = firstVariable">Crosses</button><br />
+   </p>
+   
+   <p>We are the <span id="Dead"> ______. </span> Short days ago We lived, felt dawn, saw sunset glow, Loved and were loved, and now we lie In 
+      Flanders fields.</p>
+   
+    <p>
+      <button type="button" onclick="document.getElementById('Dead').innerHTML = secondVariable">Dead</button><br />
+   </p>
+
+
+   <p>Take up our <span id = "quarrel"> _____ </span> with the foe: To you from failing hands we throw The <span id = "torch"> _____ </span>; be yours to hold it high. If ye break
+      faith with us who die We shall not sleep, though poppies grow In Flanders fields.</p>
+
+    <p>
+      <button type="button" onclick="document.getElementById('quarrel').innerHTML = thirdVariable">quarrel</button><br />
+    </p>      
+    <p>
+    <button type="button" onclick="document.getElementById('torch').innerHTML = fourthVariable">torch</button><br />
+    </p>
+
+   
+   <hr  />
+
+   </div>
+
+   <address>
+   <p><a href="https://www.bellevue.edu" target="_blank">Bellevue University</a></p>
+   <p>1000 Gavin Rd S.</p>
+   <p>Bellevue NE 68005</p>
+   </address>
+
+</body>
+</html>
