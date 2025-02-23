@@ -1,0 +1,57 @@
+<!-- Jason Schriner -->
+<!-- Module 10.3 -->
+<!-- 2/23/2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSD 340 Development with HTML and CSS</title>
+
+ <!-- Meta tags -->
+    <meta name="author" content="Jason Schriner">
+    <meta name="description" content="This webpage is created for an assignment in my HTML class at Bellevue University.">
+    <meta http-equiv="refresh" content="30">  <!-- This will refresh the page every 30 seconds, remove if not needed -->
+    <meta name="robots" content="noindex, follow">  <!-- Search engines will not index the page but will follow links -->
+
+
+</head>
+<body>
+   <div id="container">
+   
+   <h1> Assignment 10.3 – JavaScript -Part 2</h1>
+
+   <div>
+      <a href="#" 
+         onmouseover="scene.src='nature.jpg';" 
+         onmouseout="scene.src='city.jpg';"
+         onclick="changeBackgroundColor(event);">
+        <img id="scene" border="0" src="city.jpg">
+      </a>
+   </div>
+   Mouse Over Image to change 
+
+   
+   <div>
+      <a href="#" 
+         onmouseover="season.src='winter.jpg';" 
+         onmouseout="season.src='summer.jpg';"
+         onclick="changeBackgroundColor(event);">
+        <img id="season" border="0" src="summer.jpg">
+      </a>
+   </div>
+   Click on Image to see what happens
+  
+<script>
+   // Function to change the background color of the container
+   function changeBackgroundColor(event) {
+      event.preventDefault();  
+      var container = document.getElementById('container');
+      container.style.backgroundColor = 'lightblue';
+   }
+</script>
+ 
+</div>
+
+
+</body>
+</html>
