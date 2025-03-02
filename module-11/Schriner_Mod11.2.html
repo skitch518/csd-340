@@ -1,0 +1,83 @@
+<!-- Jason Schriner -->
+<!-- Module 11.2 -->
+<!-- 3/2/2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Schriner_Mod11.2.css">
+
+</head>
+<body>
+   <div id="container">
+   
+   <h1> Assignment 11.2 – JavaScript - Part 3</h1>
+   <h2>To do list:</h2>
+    
+   <!-- Input and buttons -->
+   <input type="text" id="inputElement"> 
+   <button onclick="addItem()">Add</button> 
+   <button onclick="deleteLastItem()">Delete Last Item</button> 
+   <button onclick="displayList()">Display</button> 
+   
+   <hr  />
+
+   </div>
+  
+   <ul id="itemList">
+     <!-- To do items will display here -->
+   </ul>
+
+<script>
+        // Initialize an empty array
+        var myList = [];
+
+        // Function to add the input value to the array
+        function addItem() {
+            // Get user input
+            const inputValue = document.getElementById('inputElement').value;
+            
+            // Add the value to the array if it's not empty
+            if(inputValue.trim() !== "") {
+                myList.push(inputValue);  // Add to the array
+                document.getElementById('inputElement').value = '';  
+                  alert(`Item: ${inputValue}`);   // Alert the value added
+            } else {
+                alert('Please enter a value!');
+            }
+        }
+
+        // Function to display the array elements with an index
+        function displayList() {
+            // Get the UL element where we will display the array items
+            const itemList = document.getElementById('itemList');
+            
+            // Clear the current list before updating
+            itemList.innerHTML = '';
+            
+            // Loop through the array and create list items with index
+            myList.forEach((item, index) => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `Item ${index + 1}: ${item}`;
+                itemList.appendChild(listItem);
+            });
+        }
+
+        // Function to delete the last item
+        function deleteLastItem() {
+            // Remove the last item from the array if it's not empty
+            if (myList.length > 0) {
+                const removedItem = myList.pop();  // Remove last item
+                displayList();  // Update the displayed list
+            } else {
+                alert('List is already empty!');
+            }
+        }
+    </script>
+
+
+ 
+
+</body>
+</html>
