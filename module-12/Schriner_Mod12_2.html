@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <link rel="stylesheet" href="Schriner_Mod12_2.css">
+</head>
+<body>
+ 
+<script>
+  var bookList = ["Pirate Latitudes by Michael Chrichton",
+    "Private by James Patterson",
+    "The Hunt for the Red October by Tom Clancy",
+    "Mud Sweat and Tears by Bear Grylls",
+    "Jurassic Park by Michael Chrichton",
+    "Sell Up & Sail by Bill and Laurel Cooper",
+    "State of Fear by Michael Chrichton",
+    "1st To Die by James Patterson",
+    "Little Book of Common Sense Investing",
+    "Into the Wild by Jon Krakauer"];
+
+  function topToBottom(){
+    
+    // Get Ul element
+    const bookListContainer = document.getElementById("book-list");
+    
+    // Clear the Current list
+    bookListContainer.innerHTML = "";
+    
+   // Loop through list to display
+    bookList.forEach(book => {
+      const li = document.createElement("li");
+      li.textContent = book;
+      bookListContainer.appendChild(li);
+    }); 
+  }
+ 
+ function bottomToTop(){
+    // Get Ul element
+    const bookListContainer = document.getElementById("book-list");
+    
+    // Clear the Current list
+    bookListContainer.innerHTML = "";
+    
+   // Loop through list to display
+    bookList.slice().reverse().forEach(book => {
+      const li = document.createElement("li");
+      li.textContent = book;
+      bookListContainer.appendChild(li);
+    }); 
+
+  }
+
+</script>
+
+
+  <div id="container">
+    <h1>Assignment 12.2:JavaScript - Part 4</h1>
+  </div>
+
+  <div class="left_div">
+    <h3>Top 10 Favorite Books</h3>
+    <button onclick="topToBottom()">Top to Bottom</button> 
+    <button onclick="bottomToTop()">Bottom to Top</button> 
+  <hr  >
+
+ <ul id="book-list"></ul>
+
+  </div>
+
+  <div class="right_div">
+    <h3>5 Things I've Learned Since the Course Started</h3>
+    <ul>
+      <li>CSS Files</li>
+      <li>Changing Fonts in HTML</li>
+      <li>Creating Weblinks</li>
+      <li>Creating Containers</li>
+      <li>Adding Borders</li>
+    </ul>
+  </div>
+
+  <div class="last_div">
+    <a href="https://skitch518.github.io/csd-340/">Back to Landing Page</a>
+  </div>
+
+</body>
+</html>
